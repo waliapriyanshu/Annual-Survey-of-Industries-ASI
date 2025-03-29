@@ -1,1 +1,8 @@
-StreamlitPandasMatplotlibSeabornNumpyPlotlyPillow
+Streamlit
+Pandas
+Matplotlib
+Seaborn
+Numpy
+Plotly
+Pillow
+openpyxl
