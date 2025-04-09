@@ -20,7 +20,7 @@ git clone https://github.com/waliapriyanshu/Annual-Survey-of-Industries-ASI.git
 cd Annual-Survey-of-Industries-ASI
 ```
 2. Download the ASI Dataset
-Option 1: From esankhiki:
+Option 1: From esankhyiki:
 - Visit the official ASI data portal: https://esankhyiki.mospi.gov.in/macroindicators?product=asi
 - Navigate to the "Download" section.
 - Click on "Download (CSV)" to obtain the latest ASI dataset.
