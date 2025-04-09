@@ -57,7 +57,7 @@ The dashboard should open automatically in your default web browser
 
 ### Data Upload
 You can upload your own Excel file using the sidebar uploader. The dashboard supports multiple sheets in a single Excel file. Ensure your data has columns for:
-**NIC Description**
+- NIC Description
 - State
 - Year
 - Value metrics
