@@ -67,10 +67,12 @@ You can upload your own Excel file using the sidebar uploader. The dashboard sup
 - Adjust the number of sectors to display using the slider.
 - Select different chart types (Bar Chart, Pie Chart, Treemap).
 - Compare specific sectors using the comparison tool.
+
 **Regional Distribution**:
 - Select a specific manufacturing sector from the dropdown.
 - Choose between total factory count or percentage views.
 - Compare statistics across different states.
+
 **Time Series Analysis**:
 - Select a state and sector of interest.
 - View growth trends over time with various visualization options.
