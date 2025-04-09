@@ -21,13 +21,13 @@ cd Annual-Survey-of-Industries-ASI
 ```
 2. Download the ASI Dataset
 Option 1: From esankhiki:
-## Visit the official ASI data portal: https://esankhyiki.mospi.gov.in/macroindicators?product=asi
-## Navigate to the "Download" section.
-## Click on "Download (CSV)" to obtain the latest ASI dataset.
-## Save the downloaded file in the project directory.
+** Visit the official ASI data portal: https://esankhyiki.mospi.gov.in/macroindicators?product=asi
+** Navigate to the "Download" section.
+** Click on "Download (CSV)" to obtain the latest ASI dataset.
+** Save the downloaded file in the project directory.
 Option 2: From Google Drive:
-## Download the dataset directly from this Google Drive link.
-## Save the downloaded file in the project directory.
+** Download the dataset directly from this Google Drive link.
+** Save the downloaded file in the project directory.
 3. Set Up a Virtual Environment (Recommended)
 For Windows:
 ```bash
@@ -58,19 +58,19 @@ Using the Dashboard
 You can upload your own Excel file using the sidebar uploader. The dashboard supports multiple sheets in a single Excel file. Ensure your data has columns for:
 
 NIC Description
-## State
-## Year
-## Value metrics
+** State
+** Year
+** Value metrics
 Exploring Different Views
-## Sector Analysis:
+** Sector Analysis:
 Adjust the number of sectors to display using the slider.
 Select different chart types (Bar Chart, Pie Chart, Treemap).
 Compare specific sectors using the comparison tool.
-## Regional Distribution:
+** Regional Distribution:
 Select a specific manufacturing sector from the dropdown.
 Choose between total factory count or percentage views.
 Compare statistics across different states.
-## Time Series Analysis:
+** Time Series Analysis:
 Select a state and sector of interest.
 View growth trends over time with various visualization options.
 Analyze year-over-year growth and CAGR metrics.
