@@ -2,7 +2,7 @@
 A comprehensive interactive dashboard for visualizing and analyzing India's manufacturing sectors using Annual Survey of Industries (ASI) data.
 
 ## Dashboard Preview
-![Dashboard Preview](https://dashboardasi.streamlit.app))
+https://dashboardasi.streamlit.app
 
 ### Features
 - **Sector Analysis**: Explore top manufacturing sectors by the number of factories.
@@ -11,7 +11,6 @@ A comprehensive interactive dashboard for visualizing and analyzing India's manu
 - **Multiple Visualization Options**: Bar charts, pie charts, treemaps, and more.
 
 ## Setup Guide
-
 Follow these steps to set up and run the ASI Dashboard on your local system:
 
 ### 1. Clone the Repository
@@ -27,7 +26,7 @@ Option 1: From esankhyiki:
 - Save the downloaded file in the project directory.
 
 Option 2: From Google Drive:
-- Download the dataset directly from this Google Drive link: ```bash https://drive.google.com/file/d/10U5b7smwZoizWt51CBc5JFUeuZFccdVk/view```
+- Download the dataset directly from this Google Drive link: https://drive.google.com/file/d/10U5b7smwZoizWt51CBc5JFUeuZFccdVk/view
 - Save the downloaded file in the project directory.
 ### 3. Set Up a Virtual Environment (Recommended)
 For Windows:
@@ -83,5 +82,5 @@ You can upload your own Excel file using the sidebar uploader. The dashboard sup
 - Browser Compatibility: For the best experience, use modern browsers like Chrome or Firefox.
 
 ## Acknowledgments
-Data source: Annual Survey of Industries (ASI), Ministry of Statistics and Programme Implementation.
-Dashboard created using Streamlit and Plotly.
+- Data source: Annual Survey of Industries (ASI), Ministry of Statistics and Programme Implementation.
+- Dashboard created using Streamlit and Plotly.
