@@ -20,6 +20,14 @@ st.set_page_config(
 # Add custom CSS for styling - improved visibility for text elements
 st.markdown("""
 <style>
+    /* Move loading spinner (streamlitApp) to the center-bottom */
+.css-1v0mbdj.e115fcil1 {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
     /* Improve text visibility */
     .stTabs [data-baseweb="tab-list"] button [data-testid="stMarkdownContainer"] p {
         font-size: 1.2rem;
