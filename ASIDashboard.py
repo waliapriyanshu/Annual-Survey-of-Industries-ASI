@@ -6,6 +6,8 @@ import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
 from PIL import Image
+import requests
+from io import BytesIO
 
 # Set page configuration
 st.set_page_config(
@@ -99,29 +101,30 @@ st.markdown("""
 
 # Function to load data
 @st.cache_data
-def load_data():
+def load_data_from_github():
     try:
-        # Load your excel file
-        df_all_india = pd.read_excel('/Users/priyanshuwalia7/Downloads/ASI data.xlsx', sheet_name='Sheet1') # replace it with your dataset path
-        df_kerala = pd.read_excel('/Users/priyanshuwalia7/Downloads/ASI data.xlsx', sheet_name='Sheet2')
-        df_haryana = pd.read_excel('/Users/priyanshuwalia7/Downloads/ASI data.xlsx', sheet_name='Sheet3')
-        
-        # Combine all dataframes into one
+        # Your GitHub raw URL
+        url = "https://github.com/waliapriyanshu/Annual-Survey-of-Industries-ASI/raw/0855da82d8f9bc0b6e24dcb2195c605db4a19fd2/ASI%20data.xlsx"
+
+        # Download the Excel file content
+        response = requests.get(url)
+        response.raise_for_status()
+        file_bytes = BytesIO(response.content)
+
+        # Load the three sheets
+        df_all_india = pd.read_excel(file_bytes, sheet_name='Sheet1')
+        df_kerala = pd.read_excel(file_bytes, sheet_name='Sheet2')
+        df_haryana = pd.read_excel(file_bytes, sheet_name='Sheet3')
+
+        # Combine and return
         combined_df = pd.concat([df_all_india, df_kerala, df_haryana], ignore_index=True)
-        
-        # Create a time series dataframe for analysis over years
-        # Extract unique years from the data
-        years = combined_df['Year'].unique().tolist()
-        states = combined_df['State'].unique().tolist()
-        
-        # Prepare time series data (extracting from your existing data)
         time_df = combined_df.copy()
-        
         return combined_df, time_df
+
     except Exception as e:
-        st.error(f"Error loading data: {e}")
-        # Return empty dataframes to prevent app from crashing
+        st.error(f"Error loading data from GitHub: {e}")
         return pd.DataFrame(), pd.DataFrame()
+
 
 # Function to upload Excel file
 def upload_excel_file():
@@ -152,7 +155,7 @@ def upload_excel_file():
             return pd.DataFrame(), pd.DataFrame()
     else:
         # If no file is uploaded, load sample data
-        return load_data()
+        return load_data_from_github()
 
 # Load data from uploaded file or use sample data
 df, time_df = upload_excel_file()
